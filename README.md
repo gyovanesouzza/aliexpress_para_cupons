@@ -10,3 +10,6 @@ bibliotecas:
  
  ai na pasta vc aperta shift + botao direito e seleciona Abrir janela do PowerShell aqui ou Prompt de comando
 vc digita o comando python ali.py e muda para a tela do carrinho da aliexpress
+
+Requisito para ativa o bot: 
+ - Ter selecionado a forma de pagamento
