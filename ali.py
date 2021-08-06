@@ -14,17 +14,10 @@ while True:
     if TOTAL:
         for cupom in CUPONS:
             print(cupom)
-            texto = LoS('text.png', confidence=0.8)
-            if texto is None :
-                z, t = pyautogui.locateCenterOnScreen('fazer.png', confidence=0.8)
-                print(datetime.now() + " Foi aplicado o Cupom: " + cupom)   
-                pyautogui.click(z, t)
-                break
-
-           
+            sleep(1)          
             x, y = pyautogui.locateCenterOnScreen('text.png', confidence=0.8)
             pyautogui.click(x, y)
-            sleep(1)
+            
             pyautogui.write(cupom)
             sleep(1.5)
 
@@ -33,6 +26,8 @@ while True:
             pyautogui.click(z, t)
 
             sleep(2)
-           
+            if not TOTAL:
+                break
+
     else:
         break 
